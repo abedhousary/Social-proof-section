@@ -1,0 +1,154 @@
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+
+}
+.top-left,.bottom-left {
+    position: absolute;
+    z-index: -1;
+}
+.top-left {
+    left: 0;
+}
+.bottom-left {
+    right: 0;
+}
+.top-container {
+    width: 80%;
+    height: 500px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.title {
+    font-size: 57px;
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+    width: 386px;
+    line-height: 57px;
+
+}
+
+.desc {
+    color: var(--DarkGrayishMagenta);
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 21px;
+    font-size: 18px;
+}
+.rate-card {
+        width: 406px;
+        height: 60px;
+        background-color: var(--LightGrayishMagenta);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        padding-right: 20px;
+
+}
+.stars {
+    margin-left: 40px;
+}
+.content {
+    margin-left: 40px;
+    font-weight: bold;
+    color: var(--VeryDarkMagenta)   ;
+}
+.rate-card:nth-child(2){
+    margin:20px 0px 0px 50px;
+}
+.rate-card:nth-child(3) {
+    margin: 20px 0px 0px 90px;
+}
+.bottom-container {
+    width: 80%;
+    height: 301px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+        width: 316px;
+        height: 200px;
+        background-color: var(--VeryDarkMagenta);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+}
+.card .profile {
+    width: 80%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile .avatar {
+    width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+}
+.profile .data {
+        height: 100%;
+        width: 96px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.data .name {
+        color: var(--White);
+            font-weight: 500;
+}
+.data .position {
+        color: var(--SoftPink);
+            margin-top: 5px;
+}
+.card .quote {
+    color: var(--White);
+        margin-left: 37px;
+        margin-top: 10px;
+        line-height: 22px;
+}
+
+.card:nth-child(2) {
+    margin:20px 0px 0px 20px;
+}
+
+.card:nth-child(3) {
+    margin: 40px 0px 0px 20px;
+}
